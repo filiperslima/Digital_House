@@ -1,0 +1,37 @@
+    h3 {
+        color: crimson;
+    }
+    
+    #title {
+        font-size: 40px;
+        text-transform: uppercase
+    }
+    
+    .sub-title {
+        font-weight: 700;
+        font-style: italic
+    }
+    
+
+    /* 
+     alterar cor do fundo {background-color: tomato}
+     alterar cor {color: purple ;}
+     alterar opacidade { opacity: 0.5}
+     { font-family: Arial, sans-serif; } Especifica as fontes utilizadas. Pode ser mais de uma, pois se uma não estiver disponível, vai a que tiver
+     Especifica tamanho da fonte { font-size: 23px; }
+     Especifica o estilo da fonte {font-style: normal ou italic ou oblique;}
+     Altera o peso da fonte { font-weight: 500 ou bold, ou lighter ou normal;} 
+     Altera o alinhamento do texto { text-align; justify ou left ou right ou inherit;}
+     Altera um ornamento do { text-decoration: underline; }
+     Especifica a altura de cada linha do texto {line-height: 20px; }
+     Adiciona o estilo ao "id:" #ola{ color:blue}
+     Adiciona o estilo a CLASSE .noticia{ font-size: 22px}
+     adiciona o estilo a TAG p { color: gray}
+     Adiciona o estilo a TAG h2 com a CLASSE subtitulo h2.subtitulo { color:yellow}
+     Adiciona o estilo a uma LISTA de ID lista  ul#lista li { text-align: center}
+     id usado em um só elemento, por boa prática. Classe usado em vários elementos
+
+
+
+
+    */

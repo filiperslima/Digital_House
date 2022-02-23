@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(226, 236, 238);
+    color: rgb(225, 102, 102);
+}
+h1 {
+    color: #df6565;
+}
+.job-title{
+    background-color: #d61d3096;
+    color: #eeeef2;
+}
+#high {
+    color: rgb(153, 139, 139);
+}
+ul {
+    background-color: #333333;
+    color: rgb(223, 215, 185) ;
+}
