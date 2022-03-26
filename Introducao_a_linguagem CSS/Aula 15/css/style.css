@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.aba {
+    width: 100%;
+    background-color: #222222;
+    position: absolute;
+    top: 0;
+    height: 20px;
+
+}
+nav .container {
+    width: 100%;
+    display: flex;
+    background-color: #F0A83E;
+    ;
+}
+.container{
+    width: 1024px;
+    margin: 0 auto;
+}
+.card-produtos {
+    display: flex;
+    justify-content: space-between;
+
+}
+.card-produto {
+    width: 265 px;
+    background-color: #fbfaf6;
+    
+}
+@media(max-width: 425px) {
+    .container {
+        width: 100%;
+    }
+    .card-produtos {
+        flex-direction: column;
+    }
+
+}

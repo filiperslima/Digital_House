@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.desconto {
+    position: absolute;
+width: 100%;
+height: 23px;
+left: 0px;
+top: 0px;
+
+background: #1CD1B0;
+    
+}
+.logo{
+    position: absolute;
+width: 99px;
+height: 74px;
+left: 10px;
+top: 26px;
+z-index: 1;
+}
+.loja{
+    position: absolute;
+width: 100%;
+height: 80px;
+left: 0px;
+top: 23px;
+
+background: #00669F;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+div.container{
+    width: 1140px;
+    height: 1116px;
+    margin: 0 auto;
+}
+
+
+.login{
+    display: flex;
+        justify-content: center;
+    position: relative;
+    align-items: center;
+    position: relative;
+    align-items: center;
+}
+.titulo{
+    position: absolute;
+    width: 195px;
+    height: 72px;
+    left: 410px;
+    top: 333px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+
+    color: #333333;
+
+}
+#usuario{
+    position: absolute;
+width: 620px;
+height: 60px;
+left: 411.12px;
+top: 460px;
+
+background: #FFFFFF;
+border: 1.53407px solid #000000;
+box-sizing: border-box;
+
+}
+#senha{
+    position: absolute;
+width: 620px;
+height: 60px;
+left: 410px;
+top: 540px;
+
+background: #FFFFFF;
+border: 1.53407px solid #000000;
+box-sizing: border-box;
+
+}
+#user{
+    position: absolute;
+    z-index: 1;
+width: 72.13px;
+height: 26px;
+left: 438.05px;
+top: 476.53px;
+
+font-family: 'Karla';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+/* identical to box height, or 128% */
+
+text-align: center;
+
+color: #000000;
+}
+#password{
+    position: absolute;
+    z-index: 1;
+width: 106.2px;
+height: 26px;
+left: 410px;
+top: 557px;
+
+font-family: 'Karla';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+/* identical to box height, or 128% */
+
+text-align: center;
+
+color: #000000;
+}
+#submit{
+    position: absolute;
+width: 614.25px;
+height: 53.79px;
+left: 410px;
+top: 659px;
+
+background: #1CD1B0;
+border-radius: 23.011px;
+
+}
+.direitos {
+    position: absolute;
+    width: 100%;
+    height: 61px;
+    left: -3px;
+    top: 1055px;
+    background: #00669F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.direito{
+    position: absolute;
+    width: 337px;
+    height: 19px;
+    left:550px;
+    top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFF9F9;
+
+}
+.nome-loja{
+    position: absolute;
+width: 186px;
+height: 35px;
+left: 139px;
+top: 25px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.descontos{
+    position: absolute;
+width: 268px;
+height: 18px;
+left: 133px;
+top: 2px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+
+}
+.registrar{
+    position: absolute;
+    width: 347px;
+    height: 28px;
+    left: 548px;
+    top: 733px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.4769px;
+    line-height: 28px;
+    text-align: center;
+    color: #222222;
+}
+a {
+    position: relative;
+    left: 156px;
+    top: -29px;
+}
+.register{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    left:40px;
+}
+.titulo-registro{
+    position: absolute;
+    width: 296px;
+    height: 72px;
+    left: 415px;
+    top: 229px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+    text-align: center;
+    color: #333333;
+}
+
+#usuario-registro{
+    position: absolute;
+    width: 620px;
+    height: 60px;
+    left: 410px;
+    top: 351px;
+    background: #FFFFFF;
+    border: 1.53407px solid #000000;
+    box-sizing: border-box;
+}   
+#email-registro{
+    position: absolute;
+    width: 620px;
+    height: 60px;
+    left: 410px;
+    top: 431px;
+    background: #FFFFFF;
+    border: 1.53407px solid #000000;
+    box-sizing: border-box;
+} 
+#senha-registro{
+    position: absolute;
+    width: 620px;
+    height: 60px;
+    left: 410px;
+    top: 511px;
+    background: #FFFFFF;
+    border: 1.53407px solid #000000;
+    box-sizing: border-box;
+}
+#paises-registro{
+    position: absolute;
+    width: 619px;
+    height: 60px;
+    left: 410px;
+    top: 591px;
+    
+    background: #FFFFFF;
+    border: 1.53407px solid #000000;
+    box-sizing: border-box;
+}
+.username-register{
+    position: absolute;
+    width: 180px;
+    height: 26px;
+    left: 419px;
+    top: 368px;
+    z-index: 1;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+}
+.email-register{
+    position: absolute;
+    width: 53px;
+    height: 26px;
+    left: 419px;
+    top: 450px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    z-index: 1;
+   
+}
+.password-register{
+    position: absolute;
+    width: 58px;
+    height: 26px;
+    left:419px;
+    top: 530px;
+    z-index: 1;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+}
+.countries-register{
+    position: absolute;
+    width: 39px;
+    height: 26px;
+    left: 419px;
+    top: 390px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+}

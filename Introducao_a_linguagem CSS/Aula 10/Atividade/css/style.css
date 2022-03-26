@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.desconto {
+    position: absolute;
+    width: 100%;
+    height: 38px;
+    left: 0px;
+    top: 0px;
+
+    background: #1CD1B0;
+}
+#descontos{
+    position: absolute;
+    width: 124px;
+    height: 18px;
+    left: 10px;
+    top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+
+}
+.super {
+    position: absolute;
+    width: 100%;
+    height: 101px;
+    left: 0px;
+    top: 38px;
+    background: #00669F;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+
+}
+#seção{
+    position: absolute;
+    width: 224px;
+    height: 47px;
+    left: 3%;
+    top: 30%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+
+
+}
+h2{
+    position: absolute;
+    width: 192.99px;
+    height: 39.5px;
+    left: 38%;
+    top: 25%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;position: absolute;
+    font-size: 30x;
+    font-family: 'ROBOTO';
+    font-weight: 400;
+}
+p{
+    position: absolute;
+    width: 301.33px;
+    height: 127.53px;
+    left: 11%;
+    top: 38%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #333333;
+}
+.background-batman{
+    position: absolute;
+    width: 374px;
+    height: 217.81px;
+    left: 112px;
+    top: 225.11px;
+    background-image: url('https://p4.wallpaperbetter.com/wallpaper/838/543/580/batman-logo-minimalism-batman-wallpaper-preview.jpg');
+    background-position: center;
+    border-radius: 16px 16px 0px 0px;
+    
+}
+.background-arlerquina{
+    position: absolute;
+    width: 373.57px;
+    height: 217.81px;
+    left: 572.43px;
+    top: 225.11px;
+    background-image: url('https://i.pinimg.com/564x/0d/6f/e8/0d6fe81aa07782c5bf661964ea96158b.jpg');
+    background-position: center;
+    border-radius: 16px 16px 0px 0px;
+}
+.perfil-batman{
+    position: absolute;
+    width: 135.43px;
+    height: 133.17px;
+    left: 35%;
+    top: -15%;
+    background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2022/03/batman-hbo-max-1200x450.jpeg');
+    background-size: 340px;
+    background-position: center;
+    border-radius: 100%;
+}
+.perfil-arlequina{
+    position: absolute;
+    width: 137.69px;
+    height: 137.69px;
+    left: 35%;
+    top: -15%;
+    background: url('https://rollingstone.uol.com.br/media/_versions/rs-harley-01-fddad9fc-f145-4eb5-b469-05e940f18e84_widelg.jpg');
+    background-size: 240px;
+    background-position: center;
+    border-radius: 100%;
+}
+.card-batman{
+    position: absolute;
+    width: 374px;
+    height: 379.2px;
+    left: 112px;
+    top: 441.8px;
+
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card-arlerquina{
+    position: absolute;
+    width: 374px;
+    height: 379px;
+    left: 572px;
+    top: 442px;
+
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer{
+    background-color: #00669F;
+    position: absolute;
+    width: 100%;
+    height: 51px;
+    left: 0px;
+    top: 972px;
+    background: #00669F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.background-wonderwoman{
+    position: absolute;
+    width: 374px;
+    height: 217.81px;
+    bottom: 200px;
+    background-image: url('https://p4.wallpaperbetter.com/wallpaper/838/543/580/batman-logo-minimalism-batman-wallpaper-preview.jpg');
+    background-position: center;
+    border-radius: 16px 16px 0px 0px;
+    
+}
+/* 
+.background-superman{
+    position: absolute;
+    width: 374px;
+    height: 217.81px;
+    left: 112px;
+    top: 225.11px;
+    background-image: url('https://p4.wallpaperbetter.com/wallpaper/838/543/580/batman-logo-minimalism-batman-wallpaper-preview.jpg');
+    background-position: center;
+    border-radius: 16px 16px 0px 0px;
+    
+}
+.perfil-wonderwoman{
+    position: absolute;
+    width: 135.43px;
+    height: 133.17px;
+    left: 35%;
+    top: -15%;
+    background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2022/03/batman-hbo-max-1200x450.jpeg');
+    background-size: 340px;
+    background-position: center;
+    border-radius: 100%;
+}
+.perfil-superman{
+    position: absolute;
+    width: 135.43px;
+    height: 133.17px;
+    left: 35%;
+    top: -15%;
+    background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2022/03/batman-hbo-max-1200x450.jpeg');
+    background-size: 340px;
+    background-position: center;
+    border-radius: 100%;
+} */

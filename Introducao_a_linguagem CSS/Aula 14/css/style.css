@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(93,93,93);
+}
+.quadrado { 
+    width: 100px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: khaki;
+}
+@media (min-width: 460px) {
+    .quadrado{
+        background-color: hotpink;
+    }
+}
