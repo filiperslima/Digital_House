@@ -7,23 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap"
+        rel="stylesheet">
+    <!-- GOOGLE FONTS -->
 </head>
 
 <body>
     <header>
         <div class="aba"> </div>
-        <nav class="container">
+        <nav class="container-nav">
             <div class="navegar">
-                <h2 class="categorias"> Categorias</h2>
+                <h2 class="categoria">Categorias</h2>
+            </div>
+            <div class="navegar">
                 <h2 class="pets">Pets</h2>
+            </div>
+            <div class="navegar">
                 <h2 class="quemsomos">Quem Somos</h2>
+            </div>
+            <div class="navegar">
                 <h2 class="contato"> Contato</h2>
             </div>
-            
         </nav>
     </header>
     <main>
         <div class="container">
+            <div class="banner">
+                <div class="comprar">
+                    <h1>É um prazer te ter aqui!</h1>
+                    <p>Comedouros com desconto!</p>
+                    <h2>COMEDOUROS</h2>
+                </div>
+            </div>
+            <div class="titulos">
+                <img class="simbolo" src="./img/pawprint 1.png" alt="">
+                <h4>Produtos Destacados</h4>
+            </div>
+            <div id="categorias">
+                <span class="categorias">Comedouros</span>
+                <span class="categorias">Acessórios</span>
+                <span class="categorias">Comidas</span>
+            </div>
             <div class="card-produtos">
                 <div class="card-produto">
                     <img src="./img/churrasquito.png" alt="Foto do petisco Churrasquito que parece carne">
@@ -46,10 +74,56 @@
                         <p class="preco-card-produto">R$ 650</p>
                     </div>
                 </div>
+
+            </div>
+            <div class="contato-cliente">
+                <h2>Contato</h2>
+                <form action="#">
+                    <div>
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" placeholder="Nome e Sobrenome">
+                    </div>
+                    <div>
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="Seu Email">
+                    </div>
+                    <div>
+                        <label for="telephone"></label>
+                        <input type="number" name="telephone" id="telephone" placeholder="Telefone">
+                    </div>
+                    <button type="reset" id="limpar">Limpar</button>
+                    <button type="submit" id="enviar">Enviar</button>
+                </form>
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="inscrever">
+            <div class="texto" >
+                <p>Inscreva-se para mais novidades</p>
+            </div>
+            <div id="form-inscrever">
+                <form action="" ></form>
+                <label for="email-cliente"></label>
+                <input type="email" name="email-cliente" id="email-cliente" placeholder="Informe seu email">
+                <button type="submit">Enviar</button>
+                </fom>
+                
+            </div>
+        </div>
+        <div class="rodape">
+            <div class="logo"><img src="./img/Logo.png" alt=""></div>
+            <div id="contatos">
+                <div class="localizacao"><img src="./img/location 1.png" alt=""></div>
+                <div class="phone"><img src="./img/Phone.png" alt=""></div>
+                <div class="correo"><img src="./img/Correo.png" alt=""></div>
+            </div>
+
+        </div>
+        <div class="rights">
+            <p>Todos os direitos reservados a Front end I</p>
+        </div>
+    </footer>
 </body>
 
 </html>
