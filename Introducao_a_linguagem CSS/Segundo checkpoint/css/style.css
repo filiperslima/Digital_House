@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .topo {
+    position: fixed;
+    width: 100%;
+    height: 80px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: yellowgreen;
+    z-index: 2;
+
+} */
+.barra-sup {
+    position: fixed;
+    width: 100%;
+    height: 80px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;;
+    z-index: 1;
+}
+.img-logo {
+
+}
+.links {
+    width: 30vw;
+    z-index: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/Background.png');
+}
+
+.popup {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.13s;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0,0.2);
+}
+.popup:target {
+    opacity: 1;
+    pointer-events: all;
+    backdrop-filter: blur(5px);
+    z-index: 3;
+}
+.close {
+    position: relative;
+    top: -38px;
+    right: 10px;
+    width: 30px;
+    height: 40px;
+    align-self: end;
+    
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: -0.015em;
+    text-decoration: none;
+    
+    color: rgba(0, 0, 0, 0.5);
+}
+.container {
+    position: absolute;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+    
+}
+.formulario {
+    position: relative;
+    top: 25vh;
+    width: 35vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: rgb(0, 0, 0);
+    border: 1.8px solid #fb0505;
+    animation-name: borda;
+    animation-duration: 3s;
+    animation-delay: 5ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes borda {
+    0% {border-color: #fb0505;}
+    33% {border-color: #f4ea07;}
+    66% {border-color: #61f205;}
+    100% {border-color: #00f6cb;}
+    
+}
+.form {
+    width: 100%;
+    z-index: 0;
+}
+.logo-form {
+    height: 10vh;
+    width: 60%;
+    position: absolute;
+    top:0px;
+    margin: 0 auto;
+    left: 0;
+    z-index: 0;
+    
+    
+}
+.email{
+    margin-left: 4vw;
+    width: 40vw;
+    height: 10vh;
+    margin-top: 3vh;
+    z-index: 1;
+}
+.email label {
+    margin-left: 2vw;
+    z-index: 1;
+}
+.email input {
+    argin: 0 auto;
+    width: 25vw;
+    height: 5vh;
+    background: #FFFFFF;
+    border: 1px solid #A4A4A4;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: white;
+    z-index: 1;
+}
+.email input:focus {
+    background-color: #A4A4A4;
+
+}
+.password {
+    margin-left: 4vw;
+    width: 40vw;
+    height: 10vh;
+}
+.password label {
+    margin-left: 2vw;
+    background-color: none;
+
+}
+.password input:focus {
+    background-color: #A4A4A4;
+
+}
+.password input {
+    margin: 0 auto;
+    width: 25vw;
+    height: 5vh;
+    background: #FFFFFF;
+    border: 1px solid #A4A4A4;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.button button {
+    width: 35vw;
+    border-color: black;
+    border: 1px;
+    background-color: none;
+}
+.button button:hover {
+    background-color: grey;
+}
+
+#enviar {
+    margin-left: 12vw;
+    width: 10vw;
+    height: 5vh;
+}
+
+
+
