@@ -13,76 +13,85 @@
 // - Opções não listadas no menu, devem exibir uma mensagem de erro: "Prato inexistente";
 // - Se o tempo for 3x maior que o necessário para o prato, o microondas deve exibir a mensagem: “kabumm”;
 // - No final de cada tarefa, o microondas deverá exibir a mensagem: "Prato pronto, bom apetite!!!".
+const tempoPipoca = 10;
+const tempoMacarrao = 8;
+const tempoCarne = 15;
+const tempoFeijao = 12;
+const tempoBrigadeiro = 8;
+let pratoInexiste = false;
 
-
-let pipoca = "Pipoca";
-let tempoPipoca = 10;
-let macarrao = "Macarrão";
-let tempoMacarrao = 8;
-let carne = "Carne";
-let tempoCarne = 15;
-let feijao = "Feijão";
-let tempoFeijao = 12;
-let brigadeiro = "Brigadeiro";
-let tempoBrigadeiro = 8;
-
-function menu(x, y) {
-
-    if (x != "Pipoca" && x != "macarrao" && x != "carne") {
-        console.log("stop")
-
+function microondas(x,y) {
+    x = x.toLowerCase()
+    console.log("Você escolheu o prato " + x + " com o tempo " + y)
+    if (x == "pipoca") {
+        if (y > 2 * tempoPipoca && y <= 3 * tempoPipoca) {
+            console.log("A COMIDA QUEIMOU")
+        }
+        else if (y < tempoPipoca) {
+            console.log("Tempo Insuficiente")
+        }
+        else if ( y > 3 * tempoPipoca) {
+            console.log("KABUM")
+        }
     }
-    console.log("Você escolheu o prato " + x + ". Com o tempo de preparo " + y)
-    if (x == pipoca && y > 2 * tempoPipoca && y < 3 * tempoPipoca) {
+    else if (x == "macarrão" || x == "macarrao")  {
+    if (y > 2 * tempoMacarrao && y <= 3 * tempoMacarrao) {
         console.log("A COMIDA QUEIMOU")
     }
-    else if (x == pipoca && y < tempoPipoca) {
+    else if (y < tempoMacarrao) {
         console.log("Tempo Insuficiente")
     }
-    else if (x == pipoca && y > 3 * tempoPipoca) {
+    else if ( y > 3 * tempoMacarrao) {
         console.log("KABUM")
     }
-
-    if (x === macarrao && y > 2 * tempoMacarrao && y < 3 * tempoMacarrao) {
+    }
+    else if (x == "carne")  {
+    if (y > 2 * tempoCarne && y <= 3 * tempoCarne) {
         console.log("A COMIDA QUEIMOU")
     }
-    else if (x === macarrao && y < tempoMacarrao) {
+    else if (y < tempoCarne) {
         console.log("Tempo Insuficiente")
     }
-    if (x == macarrao && y > 3 * tempoMacarrao) {
+    else if ( y > 3 * tempoCarne) {
         console.log("KABUM")
     }
-    if (x == carne && y > 2 * tempoCarne && y < 3 * tempoCarne) {
-        console.log("A COMIDA QUEIMOU")
-    }
-    else if (x == carne && y < tempoCarne) {
-        console.log("Tempo Insuficiente")
-    }
-    else if (x == carne && y > 3 * tempoCarne) {
-        console.log("KABUM")
-    }
-    if (x == feijao && y > 2 * tempoFeijao && y < 3 * tempoFeijao) {
-        console.log("A COMIDA QUEIMOU")
-    }
-    else if (x == feijao && y < tempoFeijao) {
-        console.log("Tempo Insuficiente")
-    }
-    else if (x == feijao && y > 3 * tempoFeijao) {
-        console.log("KABUM")
-    }
-    if (x == brigadeiro && y > 2 * tempoBrigadeiro && y < 3 * tempoBrigadeiro) {
-        console.log("A COMIDA QUEIMOU")
-    }
-    else if (x == brigadeiro && y < tempoBrigadeiro) {
-        console.log("Tempo Insuficiente")
-    }
-    else if (x == brigadeiro && y > 3 * tempoBrigadeiro) {
-        console.log("KABUM")
-    }
-
-    console.log("Prato pronto, bom apetite")
 }
-console.log(menu("macarrao", 40))
+    else if (x == "feijão" || x == "feijao")  {
+    if (y > 2 * tempoFeijão && y <= 3 * tempoFeijão) {
+        console.log("A COMIDA QUEIMOU")
+    }
+    else if (y < tempoFeijão) {
+        console.log("Tempo Insuficiente")
+    }
+    else if ( y > 3 * tempoFeijão) {
+        console.log("KABUM")
+    }
+}
+    else if (x == "brigadeiro")  {
+    if (y > 2 * tempoBrigadeiro && y <= 3 * tempoBrigadeiro) {
+        console.log("A COMIDA QUEIMOU")
+    }
+    else if (y < tempoBrigadeiro) {
+        console.log("Tempo Insuficiente")
+    }
+    else if ( y > 3 * tempoBrigadeiro) {
+        console.log("KABUM")
+    }
+}
+    else {
+        console.log("Prato inexistente")
+        pratoInexiste = true;
+
+    }
+    if (pratoInexiste == true) {
+        console.log("Digite um prato correto")
+    } 
+    else {
+        console.log("Prato pronto, bom apetite!!!")  
+    }
+}
+microondas("brigadeiro",10)
+
 
 // 1. Faça um programa que receba três inteiros e diga qual deles é o maior e qual o menor?
 
