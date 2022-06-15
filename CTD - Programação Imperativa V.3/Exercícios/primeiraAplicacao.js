@@ -66,25 +66,6 @@ const pessoa = [
         sexo: "M"
     },
 ];
-// console.log(pessoa[0].altura)
-
-
-// function maiorMenor() {
-// let i = 0
-// let maiorQ = pessoa[i].altura
-//     do {
-//         if (maiorQ > pessoa[i].altura) {
-//         }
-//         else {
-//             maiorQ = pessoa[i].altura
-//         }
-//     i++
-
-//     } while (i<=pessoa.length)
-// };
-
-// console.log(maiorMenor(pessoa))
-
 
 function maxMin(h){
     let maior=0, menor=5;
@@ -197,10 +178,5 @@ for (i = 0; i <espectadores.length; i++) {
 console.log(media/quantidadeOtimo)
 console.log(quantidadeRegular)
 console.log((quantidadeBom*100)/espectadores.length)
-
-// function novoEspectador(a,b) {
-//     let arrayEspectador = []
-//  arrayEspectador.push(new espectador(b, a)) }
-//  console.log(novoEspectador(15,"BOM"))
 
 
