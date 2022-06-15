@@ -111,3 +111,96 @@ function maxMin(h){
     console.log("A média da altura das mulheres é de " + somaMulheres/quantidadeMulheres)
 }
 maxMin(pessoa)
+// parte II
+
+
+const espectadores = [
+    {
+        idade:  25,
+        opiniao: "BOM"
+    },
+    {
+        idade:  21,
+        opiniao: "ÓTIMO"
+    },
+    {
+        idade:  30,
+        opiniao: "REGULAR"
+    },
+    {
+        idade:  28,
+        opiniao: "REGULAR"
+    },
+    {
+        idade:  18,
+        opiniao: "BOM"
+    },
+    {
+        idade:  22,
+        opiniao: "BOM"
+    },
+    {
+        idade:  27,
+        opiniao: "BOM"
+    },
+    {
+        idade:  24,
+        opiniao: "ÓTIMO"
+    },
+    {
+        idade:  52,
+        opiniao: "REGULAR"
+    },
+    {
+        idade:  35,
+        opiniao: "REGULAR"
+    },
+    {
+        idade:  32,
+        opiniao: "BOM"
+    },
+    {
+        idade:  21,
+        opiniao: "ÓTIMO"
+    },
+    {
+        idade:  27,
+        opiniao: "REGULAR"
+    },
+    {
+        idade:  22,
+        opiniao: "REGULAR"
+    },
+    {
+        idade:  35,
+        opiniao: "BOM"
+    },
+];
+let media = 0;
+let quantidadeOtimo = 0;
+    let quantidadeRegular =0;
+    let quantidadeBom= 0;
+for (i = 0; i <espectadores.length; i++) {
+    
+    if (espectadores[i].opiniao === "ÓTIMO") {
+    quantidadeOtimo++
+    media = espectadores[i].idade + media
+    }
+    else if (espectadores[i].opiniao == "REGULAR") {
+        quantidadeRegular++
+    }
+    else {
+        quantidadeBom++
+    }
+
+}
+console.log(media/quantidadeOtimo)
+console.log(quantidadeRegular)
+console.log((quantidadeBom*100)/espectadores.length)
+
+// function novoEspectador(a,b) {
+//     let arrayEspectador = []
+//  arrayEspectador.push(new espectador(b, a)) }
+//  console.log(novoEspectador(15,"BOM"))
+
+
