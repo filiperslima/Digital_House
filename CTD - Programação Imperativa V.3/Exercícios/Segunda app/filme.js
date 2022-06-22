@@ -3,8 +3,6 @@ module.exports =  function(array) {
         var quantidadeOtimo = array.filter(function (item) {
             return item.opiniao == "ÓTIMO" ;
     });
-    console.log(quantidadeOtimo)
-    console.log(quantidadeOtimo.length)
     let mediaOtimo = 0
     let i = 0
     do {
