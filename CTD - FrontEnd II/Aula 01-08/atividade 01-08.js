@@ -1,5 +1,5 @@
 // Filipe Rodrigues S. Lima && Iccaro Souza de Oliveira 
-
+function start(){
 let arrayEntrada = [1, 2, 4, 8];
 let soma = 0;
 console.log(arrayEntrada[0]); //Pode ser removido. Botei apenas pra se assemelhar mais com o exercício.
@@ -8,3 +8,7 @@ console.log(arrayEntrada[0]); //Pode ser removido. Botei apenas pra se assemelha
     console.log(`${soma} + ${arrayEntrada[i+1]}`);
 
  }
+ 
+}
+
+start()
