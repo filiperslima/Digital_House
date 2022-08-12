@@ -1,0 +1,100 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* @media (min-width:720px) */
+@media (min-width: 375px) {
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(30, 38%, 92%);
+    
+}
+
+.box{
+    width:75vw ;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%) ;
+    border-radius: 10px;
+}
+.photo, .photo img {
+    height: 30vh ;
+    width: 75vw;
+    margin-bottom: 2vh;
+    border-radius: 10px 10px 0 0;
+}
+h1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    margin: 1.2vh 0.4vw;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.preview {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.58rem;
+    margin: 1.2vh 4.5vw;
+    color: hsl(228, 12%, 48%);
+}
+h3 {
+    line-height: 3.6vh;
+    font-size: 0.73rem;
+    font: 300;
+
+}
+.prices{
+    font-size: 3.5em;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    position: relative;
+    top: 7vh;
+    margin-bottom: 1vh;
+    margin-left: 1.3vw;
+}
+.prices span {
+    font-size: 0.7rem;
+    text-decoration:line-through;
+    margin-left: 1.6vw;
+    position: relative;
+    bottom: 1vh;
+    color: hsl(150, 1%, 56%);
+}
+.add-cart {
+    width: 63vw;
+    height: 8vh;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+}
+.Cart {
+    width: 2.8vw;
+    margin: 0 1vw;
+}
+p {
+    margin: 0 1vw;
+    color: hsl(0, 0%, 100%);
+}
+.attribution {
+    position: relative;
+    bottom: 3px;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}

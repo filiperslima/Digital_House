@@ -18,22 +18,25 @@
  * 3 testes condicionais
  */
 
-let vencedorPartida = "";
+// let vencedorPartida = "";
 let escolhaJogador = "";
 let escolhaComputador = 0;
-
-
 function start() {
     // checarVencedorPartida();
     checarVencedorFinal();
 }
 function capturarEscolhaJogador() {
     escolhaJogador= prompt("Escolha entre Pedra (0), Papel (1) ou Tesoura (2)");
+    if (!escolhaJogador || escolhaJogador>2 || escolhaJogador<0) {
+        alert("O valor inserido não foi identificado. Escolheremos um número aleatório para você nesta partida. \nPor favor, verifique o valor inserido da próxima vez antes de enviar.")
+        escolhaJogador = parseInt(Math.random() * (3 - 1)+1).toString();
+    }
+    console.log(escolhaJogador)
     return tratarEscolha(escolhaJogador);
 }
 
 function capturarEscolhaComputador() {
-    escolhaComputador = parseInt(Math.random() * (4 - 1)+1);
+    escolhaComputador = parseInt(Math.random() * (3 - 1)+1);
     return escolhaComputador
 }
 function tratarEscolha(variavel) { //deu certo
@@ -49,30 +52,27 @@ function tratarEscolha(variavel) { //deu certo
             variavel = 2;
             break;
         default:
-            variavel = Number(variavel)
+            variavel
             break;
     }
-    return variavel
+    return Number(variavel)
 }
 function checarVencedorPartida() {
     capturarEscolhaJogador();
     capturarEscolhaComputador();
-    vencedorPartida = "";
-    if (escolhaJogador == escolhaComputador){
+    let vencedorPartida = "";
+    if (Number(escolhaJogador) == escolhaComputador){
         alert("Opa, deu empate nessa partida")
         return vencedorPartida = "";
-        
     }
     else if (escolhaJogador-escolhaComputador == -2 || escolhaJogador-escolhaComputador == 1) {
         alert("Ihhh, o humano ganhou")
         return vencedorPartida = "JOGADOR"
-
     }
     else {
         alert("HAHAAii, O robô ganhou!!")
         return vencedorPartida = "COMPUTADOR"
     }
-    
 }
 function checarVencedorFinal() {
     let pontosJogador = 0;
@@ -93,15 +93,10 @@ function checarVencedorFinal() {
        alert(`Resultado final: \n
        JOGADOR: ${pontosJogador} \n
        COMPUTADOR: ${pontosComputador} \n
-       Parabéns ${vencedorAtual} pela vitória!!!
+       Parabéns, ${vencedorAtual}, pela sua vitória!!!
    `)
        }
-
     } while (pontosJogador<3 && pontosComputador <3)
-
 }
-
-
-
 start()
 

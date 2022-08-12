@@ -1,0 +1,81 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+ 
+}
+body {
+        
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFF;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.box {
+    margin: 0 auto;
+    width: 50vw;
+    height: 75vh;
+    background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 72px;
+    font-family: 'Courier New', 'Courier', sans-serif;
+    color: #fff;
+    font-style: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+.numeros {
+    display: flex;
+    font-size: 2.5em;
+}
+.dias {
+    font-size: 1.5em;
+
+}
+.desafio {
+
+}
+.numero-1 {
+    height: 10vh;
+    width: 2.6vw;
+    background: rgba(255, 255, 255, 0.79);
+    border-radius: 3px;
+    transform: rotate(40deg);
+    position: absolute;
+    top: 21vh;
+    left: 38.2vw;
+}
+.numero-102 {
+    height: 24vh;
+    width: 2.7vw;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 20vh;
+    left: 40vw;
+
+
+
+}
+.numero-01 {
+    height: 100px;
+    width: 100px;
+    background-color: #FFF;
+    border-radius: 30px;
+    border-radius: 50%;
+    border: 24px solid #fff;
+
+}
+.numero-02 {
+
+}

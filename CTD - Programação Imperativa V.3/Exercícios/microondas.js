@@ -90,5 +90,5 @@ function microondas(x,y) {
         console.log("Prato pronto, bom apetite!!!")  
     }
 }
-microondas("brigadeiro",30)
+microondas("brigadeiro",10)
 
