@@ -56,10 +56,23 @@ h1 {
 .dark-item {
   background-color: rgb(19, 19, 19);
   border-color: black;
-  color: rgb(230, 230, 230);
+  color: rgb(170, 170, 170);
 
 }
+button {
+  position: absolute;
+  left: 80vw;
+  top: 1.5rem;
+  background-color: white;
+  color: grey;
+  border: none;
+}
+.dark-button {
+  background-color: rgb(19, 19, 19);
+  color: rgb(170, 170, 170);
 
+
+}
 /* ------------------------------ Estilos para o tema escuro (Dark-Mode) ----------------------------------------------- */
 
 /* Os seguintes estilos são os que usaremos para aplicar o modo escuro, 

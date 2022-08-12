@@ -36,7 +36,6 @@ const animal = [{
 }];
 function start() {
     createAnimalCards();
-    changeMode();
     darkModeBttn.addEventListener("click", changeMode)
 }
 
@@ -50,6 +49,8 @@ function changeMode() {
     let darkItem = document.querySelectorAll(".item");
     darkBody.classList.toggle("dark-body")
     darkTitle.classList.toggle("dark-title")
+    darkModeBttn.classList.toggle("dark-button")
+    darkModeBttn.classList.contains("dark-button")? darkModeBttn.innerText = "Light mode" : darkModeBttn.innerText = "Dark mode" 
     darkItem.forEach(element => {
         element.classList.toggle("dark-item");
     });
