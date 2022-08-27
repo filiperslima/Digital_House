@@ -3,6 +3,10 @@ let darkTitle = document.querySelector("h1");
 let parentContainer = document.getElementById("parent-Container");
 let darkModeBttn = document.querySelector("button");
 
+
+
+
+
 const animal = [{
     title: "O Tigre",
     description: `O tigre (Panthera tigris) é uma das espécies da subfamília Pantherinae (família Felidae) pertencente ao gênero Panthera.
@@ -66,17 +70,49 @@ function createPost(src, h2, p) {
     newTitle = document.createElement("h2");
     newDescription = document.createElement("p");
     newImage = document.createElement("img");
+    newInput = document.createElement('input')
+    newButton = document.createElement('input')
+    
+    newButton.setAttribute('type', 'button')
+    newButton.setAttribute('value', 'Alterar imagem')
+    newInput.setAttribute('type', 'text')
+    newButton.setAttribute('class', 'button-style')
+
+
 
     newDiv.classList.add("item");
     newImage.setAttribute("src", `${src}`);
     newTitle.innerText = `${h2}`;
     newDescription.innerText= `${p}`;
+    newImage.addEventListener('click', showInputs)
 
     newDiv.appendChild(newImage);
     newDiv.appendChild(newTitle);
     newDiv.appendChild(newDescription);
+    newDiv.appendChild(newInput)
+    newDiv.appendChild(newButton)
     parentContainer.appendChild(newDiv);
+
 }
+function showInputs(event) {
+    let parent = event.currentTarget.parentElement
+    let imageElement = event.currentTarget
+    let input = parent.getElementsByTagName('input')[0];
+    let button = parent.getElementsByTagName('input')[1];
+    input.classList.toggle('show')
+    button.classList.toggle('show')
+    
+    button.addEventListener('click', alterar)
+    
+    function alterar() {
+        let newUrl= input.value;
+        imageElement.src = `${newUrl}`
+        input.classList.toggle('show')
+        button.classList.toggle('show')
+    }
+
+}
+
 
 
 start()

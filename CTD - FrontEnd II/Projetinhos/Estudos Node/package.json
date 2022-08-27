@@ -1,0 +1,10 @@
+{
+  "name": "estudos-node",
+  "version": "1.0.0",
+  "description": "Primeiro Projeto NodeJS",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "",
+  "license": "ISC"
+}

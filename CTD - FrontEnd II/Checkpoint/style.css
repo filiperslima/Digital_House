@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#container {
+     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#card-area{
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#card-area .card{
+    position: relative;
+    cursor: pointer;
+
+
+}
+#card-area .card .face{
+    width: 20vw;
+    height: 30vh;
+    transition: 0.5;
+}
+
+#card-area .card .face.face1 {
+    position: relative;
+    background: #ff79b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform:  translateY(15vh);
+}
+
+
+#card-area .card:hover .face.face1 {
+    background-color: blueviolet;
+    transform: translateY(0);
+}
+#card-area .card .face.face1 .content{
+    opacity: 0.8;
+    transition: 0.8s;
+}
+
+#card-area .card:hover .face.face1 .content{
+    opacity: 1;
+}
+#card-area .card .face.face .content img {
+    width: 100%;
+    height: 30vh;
+
+}
+
+
+#card-area .card .face.face .content h2 {
+    margin: 10px 0 0;
+    padding: 0;
+    color:brown;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+    bottom: 2rem;
+}
+#card-area .card .face.face2{
+    position: relative;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-15vh);
+}
+
+#card-area .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+#card-area .card .face.face2 .content h4{
+    margin: 0;
+    padding: 0;
+}
+
+#card-area .card .face.face2 .content a{
+    margin: 15px 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #FFFF;
+    padding: 3px;
+    border: 1px solid #333;
+}
+
+#card-area .card .face.face2 .content a:hover{
+    background: #333;
+    color: #FFF;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* animações */
+/* @keyframes movement {
+    from {
+        opacity: 0.98;
+        object-position: 0 50%;
+    }
+    to {
+        opacity: 1;
+        object-position: 100% 50%;
+    }
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardImage {
+    max-width: 15rem;
+    height: 23rem;
+    object-fit:cover ;
+    opacity: 0.9;
+    border-radius: 10px;
+    animation-name: movement;
+    animation-duration: 10s;
+    animation-direction:alternate-reverse ;
+    animation-timing-function: linear ;
+    animation-iteration-count: infinite;
+
+
+}
+
+.cardImage:hover {
+    object-fit: cover;
+}
+
+#card-area {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.div-card {
+    left: 20px;
+    width: 15rem;
+    height: 20rem;
+    border: 1px dashed brown;
+    border-radius: 10px;
+}
+
+.div-card:hover {
+    transform: scale(1.1,1.1);
+}
+h2 {
+    position: relative;
+    text-align: center;
+    width: 15rem;
+    bottom: 13rem;
+    text-justify: center;
+}
+h4 {
+    position: relative;
+    bottom: 12rem;
+    opacity: 0;
+    text-justify: center;
+}
+.div-card:hover h4 {
+    opacity: 1;
+} */
+
+/* Evitar redimensionar text-area */
+#text-area {
+    resize: none;
+}

@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.area {
+    width: 100vw;
+    height: 100vh;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    padding: 10vh 10vw;
+}
+.container{
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cards{
+    width: 35vw;
+    height: 60vh;
+    background-color: #ebc95e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    box-shadow: 1px 1px 5px 0.1px rgb(87, 87, 87);
+}
+h2 {
+    font-family: ui-sans-serif;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 1px 0px 1px black;
+}
+h3 {
+    font-family: Courier, monospace;
+    color: #fff;
+    text-shadow: 1px 0px 1px black;
+
+}
+img {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    width: 16vw;
+    filter: brightness(110%);
+}
+a {
+    font-family: Courier, monospace;;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 1px 0px 1px black;
+
+}
+/* button {
+    width: 25vw;
+    height: 7vh;
+    font-size: small;
+    text-align:start ;
+} */
+/* 
+ */
+ .btn-71,
+.btn-71 *,
+.btn-71 :after,
+.btn-71 :before,
+.btn-71:after,
+.btn-71:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-71 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  color: #eec53d;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+  padding: 0;
+}
+.btn-71:disabled {
+  cursor: default;
+}
+.btn-71:-moz-focusring {
+  outline: auto;
+}
+.btn-71 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-71 [hidden] {
+  display: none;
+}
+.btn-71 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-71:before {
+  --opacity: 0.2;
+  aspect-ratio: 1;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  content: "";
+  left: 50%;
+  opacity: var(--opacity);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  z-index: -1;
+}
+.btn-71:hover:before {
+  -webkit-animation: enlarge 1s forwards;
+  animation: enlarge 1s forwards;
+}
+@-webkit-keyframes enlarge {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(4);
+  }
+}
+@keyframes enlarge {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(4);
+  }
+}
