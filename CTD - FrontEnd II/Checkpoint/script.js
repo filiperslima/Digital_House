@@ -2,7 +2,7 @@
 window.onload = function () {
 const cardArea = document.getElementById('card-area');
 
-const imageUrl = document.querySelector('input');
+const imageUrl = document.querySelector('#url');
 const title = document.getElementById('title');
 const textArea = document.querySelector('textarea');
 const button = document.querySelector('button')
@@ -17,27 +17,8 @@ function clearFields() {
 
 
 function createCards (url, title, description) {
-    // const divCard = document.createElement('div');
-    // const cardImage = document.createElement('img');
-    // const cardTitle = document.createElement('h2');
-    // const cardDescription = document.createElement('h4');
-
-    // cardImage.setAttribute('src', url);
-    // cardImage.setAttribute('class', 'cardImage');
-    // cardImage.setAttribute('alt', "Imagem não encontrada")
-    // divCard.setAttribute('class', 'div-card');
-    // cardTitle.contentEditable = true;
-    // cardTitle.innerText = `${title}`;
-    // cardDescription.innerText = `${description}`;
-    
-    // divCard.appendChild(cardImage)
-    // divCard.appendChild(cardTitle)
-    // divCard.appendChild(cardDescription)
-
-    // cardArea.appendChild(divCard)
     const divCard = document.createElement("div");
     divCard.setAttribute('class', 'card')
-
     divCard.innerHTML = 
                 `
                 <div class="face face1">

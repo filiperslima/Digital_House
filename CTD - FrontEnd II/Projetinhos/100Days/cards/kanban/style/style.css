@@ -362,7 +362,7 @@ svg {
     transition: left 1s;
     animation: buttonChange 3s;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    animation-direction:alternate;
 
     color: #282a36;
     background-color: #50fa7b;
