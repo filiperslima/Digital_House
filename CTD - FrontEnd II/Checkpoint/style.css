@@ -334,7 +334,7 @@ textarea {
         flex-direction: column;
         justify-content:center;
         align-items: center;
-        left: 5.6vw;
+        left: 6vw;
     }
     #form-area {
         height: 20em;
@@ -524,5 +524,8 @@ textarea {
     #text-area {
         resize: none;
 
+    }
+    svg {
+        display: none;
     }
 }

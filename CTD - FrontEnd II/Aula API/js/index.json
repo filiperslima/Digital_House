@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "gender": "male",
+            "name": {
+                "title": "Monsieur",
+                "first": "Rayan",
+                "last": "Louis"
+            },
+            "location": {
+                "street": {
+                    "number": 6462,
+                    "name": "Rue du 8 Mai 1945"
+                },
+                "city": "Seeberg",
+                "state": "Zürich",
+                "country": "Switzerland",
+                "postcode": 1083,
+                "coordinates": {
+                    "latitude": "-63.3915",
+                    "longitude": "-53.2390"
+                },
+                "timezone": {
+                    "offset": "+4:30",
+                    "description": "Kabul"
+                }
+            },
+            "email": "rayan.louis@example.com",
+            "login": {
+                "uuid": "d9aaccf0-549d-4d6e-9603-4d0f0e8dca74",
+                "username": "angryduck359",
+                "password": "greece",
+                "salt": "urJZ2z6g",
+                "md5": "5bc036444293879ad3828fd04b34a3fb",
+                "sha1": "76a3db703ecdaa965d82309a62cab09c430daf9c",
+                "sha256": "70b62ec659db43dea1da05156a4bbca569bf096f1851b3ab38571e6c0e04024f"
+            },
+            "dob": {
+                "date": "1990-10-16T09:18:47.836Z",
+                "age": 31
+            },
+            "registered": {
+                "date": "2002-10-09T12:25:57.960Z",
+                "age": 19
+            },
+            "phone": "079 587 64 29",
+            "cell": "076 292 48 63",
+            "id": {
+                "name": "AVS",
+                "value": "756.2782.7221.36"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/98.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/98.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/98.jpg"
+            },
+            "nat": "CH"
+        }
+    ],
+    "info": {
+        "seed": "2df6bf4971cf3f1a",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    }
+}
