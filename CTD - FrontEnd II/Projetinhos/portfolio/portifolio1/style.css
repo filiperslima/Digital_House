@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow-y: hidden;
+
+}
+
+
+@keyframes slideDown {
+  0% {
+      /* z-index: 1; */
+      /* opacity: 1; */
+      transform: translateY(-1%);
+
+  }
+  90%{
+    /* opacity: 0.99; */
+  }
+  100% {
+      transform: translateY(100%);
+  }
+  
+}
+@keyframes slideUp {
+0% {
+    transform: translateY(100%);
+
+  }
+100% {
+  transform: translateY(-1%);
+
+}
+}
+@keyframes blinking {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+
+  
+}
+
+@keyframes zoom {
+  from {
+    background-size: fill;
+  }
+  to {
+    background-size: cover;
+  }
+} 
+
+
+
+body {
+  background-color: grey;
+}
+
+ header{
+    width: 100vw;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+
+ }
+ 
+ .nav-links{
+  max-width: 70vw;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.26em;
+  letter-spacing: 0.19em;
+ }
+.options {
+  width: 9rem;
+}
+.options a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.nav-links:hover>:not(:hover){
+  opacity: 0.4;
+} 
+/* a {
+  text-decoration: none;
+} */
+
+
+ section {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    will-change: transform;
+  }
+  
+
+ .outer{
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    margin-top: 13.5vh;
+ }
+
+ .outer, .inner {
+    /* height: 90vh; */
+    will-change: transform;
+ }
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-size:100vw 100vh ;
+    background-repeat: no-repeat;
+    background-position: bottom, right, left, right;
+
+}
+.bg h2{
+    margin-top: 3rem;
+    color: white;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4em;
+    letter-spacing: 0.5em;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  .one h2:nth-child(1):after{
+    content: "|";
+    animation: blinking 0.8s infinite;
+    margin-left: -4.5rem;
+
+  }
+
+ 
+ .first .bg {
+    background-image:url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJMfxHwKa2mkv6Mauib5QvWUonZECCkeNQaCdvxoqwdchXmrXuPVXTq1M_xixnpepLEHzoDAsP9wIqOfk3JsG2v2RBZkp590xPNuc3qTHUN2djnLLogzi0v-FhGAAycOR4imC1jBZVHva_KJxxpRrXmG3NmXT5DvdspTASGwnVrNhQXwU1Dz8EGnRz0g/s3840/DEV-CODE-4K.png");
+
+  }
+  
+  
+  .second .bg {
+    background-image: url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+  }
+  
+  
+  .third .bg {
+    background-image: url("https://images.unsplash.com/photo-1617438817509-70e91ad264a5?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzU2MDk4Mg&ixlib=rb-1.2.1&q=75&w=1920");
+  }
+  
+  
+  .fourth .bg {
+    background-image: url("https://images.unsplash.com/photo-1617412327653-c29093585207?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzU2MDgzMQ&ixlib=rb-1.2.1&q=75&w=1920");
+  }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.9.10 on win32)" generated="20221215 05:49:14.742" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\filip\.vscode\extensions\robocorp.robotframework-lsp-1.7.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Abrir o site da loja Chicorei">
+<msg timestamp="20221215 05:49:20.259" level="FAIL">No keyword with name 'Abrir o site da loja Chicorei' found.</msg>
+<status status="FAIL" starttime="20221215 05:49:20.259" endtime="20221215 05:49:20.259"/>
+</kw>
+<status status="PASS" starttime="20221215 05:49:14.901" endtime="20221215 05:49:31.269"/>
+</kw>
+<status status="PASS" starttime="20221215 05:49:14.899" endtime="20221215 05:49:31.269"/>
+</test>
+<status status="PASS" starttime="20221215 05:49:14.752" endtime="20221215 05:49:31.283"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
