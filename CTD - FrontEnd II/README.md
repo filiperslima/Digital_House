@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1> Hello World! </h1>
 <h2> </h2>
 
@@ -13,6 +14,9 @@ Atualmente meu conhecimento é pautado em desenvolvimento Web com HTML, CSS e Ja
 Espero que as informações acima tenham sido suficientes para te motivar a conhecer um pouco mais de meus projetos. Falando nisso, deixa eu te situar acerca do que eu já desenvolvi.
 
 <hr>
+=======
+<!-- <hr>
+>>>>>>> 295422ca23e7c8639291b940995e1d528504d4ba
 <h2> Meus projetos:
 <ul> 
 <li> KANBAN (HTML/CSS/JS)
@@ -21,4 +25,4 @@ Espero que as informações acima tenham sido suficientes para te motivar a conh
 <p> Um quadro de tarefas mais simples, mas uma construção um pouco mais robusta e feita colaborativamente com outros alunos da Digital House. Possui uma tela de Cadastro, uma de Login e a tela de Tarefas, cada uma com seus arquivos devidamente separados e com o consumo da TO-DO API da Herokuapp
 <li> E-Market
 <p> Uma loja fictícia 
-</ul>
+</ul> -->
