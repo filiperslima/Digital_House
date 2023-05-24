@@ -2,25 +2,16 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Formulario from './components/Formulario.jsx';
 import CardsFilme from './components/CardsFilmes';
-import { Rating } from 'react-simple-star-rating';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import listaFilmes from './components/listaFilmes';
-import { Button, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 
 function App() {
 
   const [filmes, setFilmes] = useState(listaFilmes);
-
-  // useEffect(() => {
-  //   atualizarFilmes()
-  // }, [filmes])
-
-  // function atualizarFilmes() {
-  //   setFilmes([...listaFilmes])
-  // }
-  function adicionarFilme(filme){
-  setFilmes((filmesAntigos) =>[...filmesAntigos, filme])
+  function adicionarFilme(filme) {
+    setFilmes((filmesAntigos) => [...filmesAntigos, filme])
   }
 
   return (
@@ -40,7 +31,7 @@ function App() {
         })}
       </Row>
       <Formulario adicionarFilme={adicionarFilme} ></Formulario>
-      {/* Adiciono aqui a função adicionarFilme={adicionarFilme} */}
+
     </>
   )
 }
