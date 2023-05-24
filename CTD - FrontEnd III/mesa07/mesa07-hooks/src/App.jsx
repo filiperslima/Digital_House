@@ -11,20 +11,23 @@ import { Button, Row, Col } from 'react-bootstrap';
 function App() {
 
   const [filmes, setFilmes] = useState(listaFilmes);
-  
-  useEffect(()=> {
-    atualizarFilmes()
-  }, [filmes])
 
-  function atualizarFilmes() {
-    setFilmes([...listaFilmes])
+  // useEffect(() => {
+  //   atualizarFilmes()
+  // }, [filmes])
+
+  // function atualizarFilmes() {
+  //   setFilmes([...listaFilmes])
+  // }
+  function adicionarFilme(filme){
+  setFilmes((filmesAntigos) =>[...filmesAntigos, filme])
   }
 
   return (
     <>
-    <Row>
-      {filmes.map((filme) => {
-        return (
+      <Row>
+        {filmes.map((filme) => {
+          return (
             <Col>
               <CardsFilme
                 key={filme.nome}
@@ -33,11 +36,11 @@ function App() {
                 avaliacao={filme.avaliacao}
               />
             </Col>
-        )
-      })}
+          )
+        })}
       </Row>
-      <Formulario ></Formulario>
-      
+      <Formulario adicionarFilme={adicionarFilme} ></Formulario>
+      {/* Adiciono aqui a função adicionarFilme={adicionarFilme} */}
     </>
   )
 }

@@ -3,29 +3,30 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Rating } from 'react-simple-star-rating';
-import listaFilmes from './listaFilmes'
+// import listaFilmes from './listaFilmes'
 
-function Formulario() {
-  const [filmes, setFilmes] = useState({});
+// {add como prop {adicionarFilme}}
+function Formulario({ adicionarFilme }) {
+  const [novoFilme, setNovoFilme] = useState({});
   const [rating, setRating] = useState(0)
 
   const inserirDados = (campo, valor) => {
-    setFilmes(
-      {...filmes,  [campo]: valor})
+    setNovoFilme(
+      { ...novoFilme, [campo]: valor })
   }
   const handleRating = (rate) => {
     setRating(rate)
     inserirDados('avaliacao', rate)
   }
-  function resetarRating(){
+  function resetarRating() {
     setRating(0)
   }
-  const handleSubmit = e =>{
+  const handleSubmit = e => {
     e.preventDefault()
-    listaFilmes.push(filmes)
+    // listaFilmes.push(filmes)
+    adicionarFilme(novoFilme)
     e.target.parentElement.reset()
     resetarRating()
-    
   }
 
   return (
@@ -39,12 +40,13 @@ function Formulario() {
       </Form.Group>
       <Form.Group className="mb-3" controlId="formImageFilme">
         <Form.Label>Imagem</Form.Label>
-        <Form.Control type="text" placeholder="Insira uma URL válido de imagem" onChange={(e) => inserirDados('url', e.target.value)}/>
+        <Form.Control type="text" placeholder="Insira uma URL válido de imagem" onChange={(e) => inserirDados('url', e.target.value)} />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formRating">
-        <Rating onClick={handleRating} initialValue={rating} ></Rating>
+        <Rating onClick={handleRating} initialValue={rating}></Rating>
       </Form.Group>
-      <Button type="submit" onClick={(e) => {handleSubmit(e)}} >Salvar</Button>
+      <Button type="submit" onClick={(e) => { handleSubmit(e) }}>Salvar</Button>
+
     </Form>
 
   )
