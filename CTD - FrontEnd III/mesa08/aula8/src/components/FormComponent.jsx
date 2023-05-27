@@ -3,13 +3,12 @@ import React, { useState } from "react";
 
 import Form from 'react-bootstrap/Form'
 
-function FormComponent({ adicionarNota, listaDisciplinas, atualizarTabela }) {
+function FormComponent({ adicionarNota, listaDisciplinas }) {
     const [novaNota, setNovaNota] = useState({disciplina: "Banco de Dados", nota: 0})
 
     const salvarDados = (campo, valor) => {
         setNovaNota({ ...novaNota, [campo]: valor })
-        // qntd de alunos === quantas notas foram inseridas nessa disciplina
-        // 
+
     }
     const handleSubmit = (e) => {
         e.preventDefault()

@@ -7,17 +7,6 @@ const listaDisciplinas = ["Banco de Dados", "Desenvolvimento Frontend", "Desenvo
 
 function App() {
   const [notas, setNotas] = useState([])
-  // const [notasFiltradas, setNotasFiltradas] = useState([
-  //   {
-  //     disciplina: "Banco de Dados",
-  //     qntdAlunos: 0,
-  //     media: 0
-  //   }
-  // ])
-  // atualizarTabela(){
-    
-  // }
-
   const adicionarNota = (novaNota) => {
     setNotas([...notas, novaNota])
     console.log()
