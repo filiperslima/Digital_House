@@ -9,7 +9,7 @@ import CardList from './components/CardList.com'
 
 
 function App() {
-  const [listaCards, setListaCards] = useState([{nome: "naruto", url: "https://nerdhits.com.br/wp-content/uploads/2022/12/road-of-naruto-768x432.jpg"}])
+  const [listaCards, setListaCards] = useState([{nome: "Azul royal", url: "https://cdn.shopify.com/s/files/1/2910/3910/products/tnt-azul-escuro-348685.jpg?v=1674239700"}])
 
   const atualizarLista = (card) =>{
     setListaCards( (listaAntiga)=> [...listaAntiga, card])
