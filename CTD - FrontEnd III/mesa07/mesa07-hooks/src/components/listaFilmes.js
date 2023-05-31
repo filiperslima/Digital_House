@@ -12,7 +12,7 @@ const listaFilmes = [{
 {
     nome: 'Sorria',
     url: 'https://oregional.com.br/media/blog/2bf59dc56babcae454499402a9e170c2.jpg',
-    avaliacao: 3
+    avaliacao: 
 
 }]
 export default listaFilmes;

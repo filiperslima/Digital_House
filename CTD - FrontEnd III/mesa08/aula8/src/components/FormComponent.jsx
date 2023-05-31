@@ -13,6 +13,8 @@ function FormComponent({ adicionarNota, listaDisciplinas }) {
     const handleSubmit = (e) => {
         e.preventDefault()
         adicionarNota(novaNota)
+
+
         
     }
     const validarNota = (valor) => {
