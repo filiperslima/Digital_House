@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App({varPedido}) {
+function App() {
   const [pedido, setPedido] = useState("");
   const [clique, setClique] = useState(false)
   const [atualizar, setAtualizar] = useState()
